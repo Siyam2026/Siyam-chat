@@ -1,0 +1,141 @@
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body{
+  height: 100vh;
+  background: #e9efff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+nav{
+  background: white;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+  width: 45px;
+  height: 45px;
+}
+
+/* Chat Container */
+.container{
+  flex: 1;
+  width: 95%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Message */
+.message{
+  max-width: 60%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 15px;
+  font-size: 14px;
+  word-wrap: break-word;
+  animation: fadeIn 0.2s ease;
+}
+
+/* Left Message */
+.left{
+  align-self: flex-start;
+  background: #f1f3ff;
+  border-bottom-left-radius: 5px;
+}
+
+/* Right Message */
+.right{
+  align-self: flex-end;
+  background: #4e73ff;
+  color: white;
+  border-bottom-right-radius: 5px;
+}
+
+/* Center System Message */
+.center{
+  text-align: center;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.center .message{
+  display: inline-block;
+  background: #ddd;
+  color: black;
+  padding: 6px 15px;
+  border-radius: 15px;
+  font-size: 13px;
+}
+
+/* Send Section */
+.send{
+  background: white;
+  padding: 15px;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
+}
+
+/* Form */
+#send-container{
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+}
+
+/* Input */
+#messageInp{
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Button */
+#btn{
+  padding: 0 20px;
+  border-radius: 25px;
+  border: none;
+  background: #4e73ff;
+  color: white;
+  cursor: pointer;
+}
+
+/* Scrollbar */
+.container::-webkit-scrollbar{
+  width: 6px;
+}
+
+.container::-webkit-scrollbar-thumb{
+  background: #bbb;
+  border-radius: 10px;
+}
+
+/* Animation */
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
