@@ -15,7 +15,7 @@ mongoose.connect("mongodb+srv://siyam:Tl5YsFUapfZrSjnN@cluster0.uh8byi7.mongodb.
 .catch(err => console.log(err));
 
 /* ================= Message Schema ================= */
-const Message = require("/Message");
+const Message = require("./Message");
 
 //app.use(express.static(path.join(__dirname, "public")));
 
